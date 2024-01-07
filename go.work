@@ -6,4 +6,8 @@ use (
 	./userInput
 	./conversion
 	./handlingtime
+	./pointers
+	./maths
+	./arrays
+	./ifelse
 )

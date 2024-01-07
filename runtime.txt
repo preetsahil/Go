@@ -1,0 +1,27 @@
+Package runtime contains operations that interact with Go's runtime system, such as functions to control goroutines.
+It also includes the low-level type information used by the reflect package; see reflect's documentation for the programmable interface to the run-time type system.
+
+The following environment variables ($name or %name%, depending on the host operating system) control the run-time behavior of Go programs. 
+The meanings and useThe GOGC variable sets the initial garbage collection target percentage. 
+ may change from release to release.
+
+The GOGC variable sets the initial garbage collection target percentage. 
+A collection is triggered when the ratio of freshly allocated data to live data remaining after the previous collection reaches this percentage.
+The default is GOGC=100.Setting GOGC=off disables the garbage collector entirely. 
+runtime/debug.SetGCPercent allows changing this percentage at run time.
+
+// The initial setting is the value of the GOGC environment variable
+// at startup, or 100 if the variable is not set.
+// This setting may be effectively reduced in order to maintain a memory
+// limit.
+// A negative percentage effectively disables garbage collection, unless
+// the memory limit is reached.
+// See SetMemoryLimit for more details.
+func SetGCPercent(percent int) int {
+	return int(setGCPercent(int32(percent)))
+}
+
+NumCPU returns the number of logical CPUs usable by the current process.
+
+The set of available CPUs is checked by querying the operating system at process startup. Changes to operating system CPU allocation after process startup are not reflected.
+

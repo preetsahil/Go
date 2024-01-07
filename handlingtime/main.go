@@ -23,6 +23,4 @@ func main()  {
 
 	//go env command will give you the environment variables and bunch of other things  and can we used in the command 
 	// GOOS="windows" go build
-	
-	
 }
