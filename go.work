@@ -2,6 +2,7 @@ go 1.21.5
 
 use (
 	./hello
+	./slices
 	./variables
 	./userInput
 	./conversion
@@ -10,4 +11,8 @@ use (
 	./maths
 	./arrays
 	./ifelse
+	./maps
+	./structs
+	./switchcase
+	./loops
 )
