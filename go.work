@@ -15,4 +15,5 @@ use (
 	./structs
 	./switchcase
 	./loops
+	./functions_methods_defer
 )
