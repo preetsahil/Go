@@ -16,4 +16,5 @@ use (
 	./switchcase
 	./loops
 	./functions_methods_defer
+	./files
 )
