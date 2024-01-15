@@ -21,7 +21,9 @@ func main()  {
 	// fmt.Println(result.RawQuery)
 	// fmt.Println(result.Path)
 
-	qparams := result.Query();
+	// fmt.Printf("type is %T\n",result.RawQuery)
+
+	qparams := result.Query();  //for better format
 
 	fmt.Printf("type of qparams is %T\n",qparams)
 	fmt.Println(qparams["coursename"])
