@@ -18,4 +18,5 @@ use (
 	./functions_methods_defer
 	./files
 	./webRequest
+	./urls
 )
