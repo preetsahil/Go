@@ -39,7 +39,7 @@ func main()  {
 		Scheme: "https",
 		Host: "lco.dev",
 		Path: "/tutcss",
-		RawPath: "user=hitesh",
+		RawQuery: "user=hitesh",
 	}
 	anotherURL := partsOfUrl.String()
 	fmt.Println(anotherURL)
