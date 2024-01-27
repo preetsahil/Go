@@ -21,4 +21,5 @@ use (
 	./urls
 	./getrequest
 	./json
+	./mymodules
 )
